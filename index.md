@@ -6,11 +6,13 @@ layout: common
 
 Jekyll回りのテスト
 
-## Page VariablesPermalink
+## Site Variables
 
 ### site.url
 
 {{site.url}}
+
+## Page Variables
 
 ### page.title
 
@@ -39,3 +41,9 @@ Jekyll回りのテスト
 ### page.path
 
 {{page.path}}
+
+## Layout Variables
+
+### layout.test
+
+{{layout.test}}
