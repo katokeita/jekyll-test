@@ -5,7 +5,7 @@ commonAssetsUrl: "default text"
 <html>
 <head>
 <!-- {{ site.url }} -->
-{% if site.url contains "staging" or "katokeita" %}
+{% if site.url contains "staging" or "test" %}
     {% assign devFlag = true %}
     {% assign commonAssetsUrl = "https://staging.exastro.org" %}
 {% else %}
@@ -13,6 +13,8 @@ commonAssetsUrl: "default text"
     {% assign commonAssetsUrl = "https://www.exastro.org" %}
 {% endif %}
 {% unless devFlag %}
+<!-- test -->
+{% endunless %}
 
 <meta charset="utf-8">
 <title>Jekyll test page</title>
