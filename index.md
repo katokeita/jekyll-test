@@ -12,6 +12,10 @@ Jekyll回りのテスト
 
 {{site.url}}
 
+{% if site.url contains "katokeita" %}
+    katokeita
+{% endif %}
+
 ## Page Variables
 
 ### page.title
