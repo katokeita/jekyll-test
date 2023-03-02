@@ -16,6 +16,8 @@ Jekyll回りのテスト
     katokeita
 {% endif %}
 
+{{ layout.commonAssetsUrl }}
+
 ## Page Variables
 
 ### page.title
