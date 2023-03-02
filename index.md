@@ -17,6 +17,7 @@ Jekyll回りのテスト
 {% endif %}
 
 {{ layout.commonAssetsUrl }}
+{{ commonAssetsUrl }}
 
 ## Page Variables
 

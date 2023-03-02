@@ -1,10 +1,11 @@
 ---
-commonAssetsUrl: ""
+commonAssetsUrl: "default text"
 ---
 <!doctype html>
 <html>
 <head>
-{% assign layout.commonAssetsUrl = "test" %}
+{% assign layout.commonAssetsUrl = "test text1" %}
+{% assign commonAssetsUrl = "test tex2t" %}
 
 <meta charset="utf-8">
 <title>Jekyll test page</title>
@@ -13,6 +14,7 @@ commonAssetsUrl: ""
 <body>
 
 {{ layout.commonAssetsUrl }}
+{{ commonAssetsUrl }}
 
 {{content}}
 
