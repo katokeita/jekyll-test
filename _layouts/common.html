@@ -5,7 +5,7 @@ commonAssetsUrl: "default text"
 <html>
 <head>
 <!-- {{ site.url }} -->
-{% if site.url contains "staging" or "test" %}
+{% if site.url contains "staging" %}
     {% assign devFlag = true %}
     {% assign commonAssetsUrl = "https://staging.exastro.org" %}
 {% else %}
