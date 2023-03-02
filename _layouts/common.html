@@ -4,8 +4,15 @@ commonAssetsUrl: "default text"
 <!doctype html>
 <html>
 <head>
-{% assign layout.commonAssetsUrl = "test text1" %}
-{% assign commonAssetsUrl = "test tex2t" %}
+<!-- {{ site.url }} -->
+{% if site.url contains "staging" or "katokeita" %}
+    {% assign devFlag = true %}
+    {% assign commonAssetsUrl = "https://staging.exastro.org" %}
+{% else %}
+    {% assign devFlag = false %}
+    {% assign commonAssetsUrl = "https://www.exastro.org" %}
+{% endif %}
+{% unless devFlag %}
 
 <meta charset="utf-8">
 <title>Jekyll test page</title>
@@ -13,7 +20,7 @@ commonAssetsUrl: "default text"
 
 <body>
 
-{{ layout.commonAssetsUrl }}
+{{ devFlag }}
 {{ commonAssetsUrl }}
 
 {{content}}
