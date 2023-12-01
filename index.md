@@ -17,8 +17,10 @@ Jekyll回りのテスト
 {% assign doclist = site.pages | sort: 'url' %}
 
 {% for doc in doclist %}
-test
-    {{doc.title}}
+### {{doc.title}}
+
+{{doc.content}}
+
 {% endfor %}
 
 {% if site.url contains "katokeita" %}
