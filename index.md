@@ -17,9 +17,11 @@ Jekyll回りのテスト
 {% assign doclist = site.pages | sort: 'url' %}
 
 {% for doc in doclist %}
-### {{doc.title}}
 
+{% if doc.url contains "faq/" %}
+### {{doc.title}}
 {{doc.content}}
+{% endif %}
 
 {% endfor %}
 
