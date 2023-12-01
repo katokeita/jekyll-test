@@ -16,14 +16,18 @@ Jekyll回りのテスト
 
 {% assign doclist = site.pages | sort: 'url' %}
 
-{% for doc in doclist %}
+{% for faq in site.data.faq %}
+    {% for doc in doclist %}
 
-{% if doc.url contains "faq/" %}
-### {{doc.title}}
-{{doc.content}}
-{% endif %}
+        {% if doc.url contains faq.category %}
+            ### {{ faq.name }} {{doc.title}}
+            {{doc.content}}
+        {% endif %}
 
+    {% endfor %}
 {% endfor %}
+
+
 
 {% if site.url contains "katokeita" %}
     katokeita
