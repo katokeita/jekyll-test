@@ -17,6 +17,8 @@ Jekyll回りのテスト
 
 {{site.url}}
 
+{{site.pages}}
+
 {% if site.url contains "katokeita" %}
     katokeita
 {% endif %}
