@@ -20,8 +20,11 @@ Jekyll回りのテスト
     {% for doc in doclist %}
 
         {% if doc.url contains faq.category %}
-            ### {{ faq.name }} {{doc.title}}
-            {{doc.content}}
+
+### {{ faq.name }} {{doc.title}}
+{{doc.content}}
+[{{doc.title}}]({{doc.permalink}} {{doc.title}})
+
         {% endif %}
 
     {% endfor %}
