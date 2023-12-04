@@ -8,5 +8,10 @@
         "category": "cat2",
         "name": "カテゴリー2",
         "icon": "cat2_icon"
+    },
+    {
+        "category": "cat3",
+        "name": "カテゴリー3",
+        "icon": "cat2_icon"
     }
 ]

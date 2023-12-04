@@ -9,9 +9,11 @@ layout: common
 {% for faq in site.data.faq %}
     {% for doc in doclist %}
 
+## {{ faq.name }}
+
         {% if doc.url contains faq.category %}
 
-## {{ faq.name }} {{doc.title}}
+### {{doc.title}}
 {{doc.content}}
 
 パーマリンク：[{{doc.title}}]({{site.url}}{{site.repository}}{{doc.url}})
