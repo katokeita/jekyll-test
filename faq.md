@@ -20,3 +20,8 @@ layout: common
         {% endif %}
     {% endfor %}
 {% endfor %}
+
+
+{{page.next}}
+
+{{page.previous}}
