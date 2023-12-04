@@ -14,7 +14,7 @@ layout: common
 ## {{ faq.name }} {{doc.title}}
 {{doc.content}}
 
-パーマリンク：[{{doc.title}}]({{doc.path}})
+パーマリンク：[{{doc.title}}]({{site.url}}{{site.repository}}{{doc.url}})
 
         {% endif %}
 
