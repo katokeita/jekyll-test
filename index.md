@@ -23,7 +23,7 @@ Jekyll回りのテスト
 
 ### {{ faq.name }} {{doc.title}}
 {{doc.content}}
-[{{doc.title}}]({{doc.permalink}} {{doc.title}})
+[{{doc.title}}]({{doc.path}} {{doc.title}})
 
         {% endif %}
 
