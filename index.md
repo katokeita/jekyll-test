@@ -23,7 +23,8 @@ Jekyll回りのテスト
 
 ### {{ faq.name }} {{doc.title}}
 {{doc.content}}
-[{{doc.title}}]({{doc.path}} {{doc.title}})
+
+パーマリンク：[{{doc.title}}]({{doc.path}})
 
         {% endif %}
 
