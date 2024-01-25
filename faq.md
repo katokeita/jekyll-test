@@ -2,7 +2,7 @@
 layout: common
 ---
 
-# FAQ
+## FAQ
 
 {% assign doclist = site.pages | sort: 'url' %}
 
@@ -32,7 +32,7 @@ layout: common
             <span class="mark">A</span><span class="text">
 {{doc.content}}
             </span>
-            <div class="permalink"><a href="{{doc.title}}]({{site.url}}{{site.repository}}{{doc.url}}">Permalink</a></div>
+            <div class="permalink"><a href="{{site.url}}{{site.repository}}{{doc.url}}">Permalink</a></div>
         </dd>
     </dl>
 </li>
