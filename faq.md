@@ -11,7 +11,8 @@ layout: common
 
 <style>
     .text p:first-child {
-        margin-top: 0;
+        margin-top: 0!important;
+        margin-left: 0!important;
     }
 </style>
 
@@ -31,7 +32,7 @@ layout: common
             <span class="mark">A</span><span class="text">
 {{doc.content}}
             </span>
-パーマリンク：[{{doc.title}}]({{site.url}}{{site.repository}}{{doc.url}})
+            <div class="permalink"><a href="{{doc.title}}]({{site.url}}{{site.repository}}{{doc.url}}">Permalink</a></div>
         </dd>
     </dl>
 </li>
