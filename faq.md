@@ -9,7 +9,13 @@ layout: common
 
 {% for faq in site.data.faq %}
 
-<h3 style="margin-bottom: 16px">{{ faq.name }}</h3>
+<style>
+    .text p:first-child {
+        margin-top: 0;
+    }
+</style>
+
+<h3 style="margin-bottom: 32px">{{ faq.name }}</h3>
 
 <div class="faqBody">
 
@@ -22,8 +28,10 @@ layout: common
     <dl id="">
         <dt class="q"><span class="mark">Q</span><span class="text">{{doc.title}}</span></dt>
         <dd class="a" style="display:block;">
-            <span class="mark">A</span><span class="text">{{doc.content}}</span>
-            パーマリンク：[{{doc.title}}]({{site.url}}{{site.repository}}{{doc.url}})
+            <span class="mark">A</span><span class="text">
+{{doc.content}}
+            </span>
+パーマリンク：[{{doc.title}}]({{site.url}}{{site.repository}}{{doc.url}})
         </dd>
     </dl>
 </li>
